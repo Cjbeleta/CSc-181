@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Database</title>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='home_design.css') }}">
+	<style>
+	fieldset {
+		width: 100%;
+		background-color: #91B9E5;
+		box-sizing: border-box;
+		border: 2px solid black;
+	}
+	legend {
+		font-family: "Calibri";
+		font-size: 15px;
+		border: 1px solid black;
+		background-color: #408FE6;
+	}
+	h1 {
+		font-family: "Century Gothic";
+		font-size: 20px;
+		color: #0E3F74;
+	}
+	p, button {
+		font-family: "Calibri";
+		font-size: 15px;
+
+	}
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center;">Welcome to Student Database</h1>
+		<fieldset>
+			<legend>Student</legend>
+			<form action="/home" method="POST">
+				<input type = "text" style="text-align: left;" placeholder="Search Student" name = "search">
+				<button type="Submit">Search</button><br>
+			</form>
+			<form action="/studentlist">
+    			<button type="submit" value="Student List"> Student List </button>
+			</form>
+			<form action="/addstudent">
+    			<button type="submit" value="Add Student"> Add Student </button>
+			</form>
+			<form action="/delstudent">
+    			<button type="submit" value="Delete Student"> Delete Student </button>
+			</form>
+			<form action="/updatestudent">
+    			<button type="submit" value="Update Student"> Update Student </button>
+			</form>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Course</legend>
+			<form action="/courselist">
+    			<button type="submit" value="Student List"> Course List </button>
+			</form>
+			<form action="/addcourse">
+    			<button type="submit" value="Add Student"> Add Course </button>
+			</form>
+			<form action="/delcourse">
+    			<button type="submit" value="Delete Student"> Delete Course </button>
+			</form>
+			<form action="/updatecourse">
+    			<button type="submit" value="Update Student"> Update Course </button>
+			</form>
+		</fieldset>
+</body>
+</html>

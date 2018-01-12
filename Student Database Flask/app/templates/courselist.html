@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course List</title>
+<style>
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+td, thead.tr {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:hover {background-color: #ddd;}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #9AECF5;
+    color: black;
+}
+
+button {
+    color: black;
+    padding: 5px 5px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+</style>
+</head>
+<body>
+	<table>	
+  <tr>
+    <th>Course ID</th>
+    <th>Course Name</th>
+  </tr>
+	<tbody>
+		{% for row in rows %}
+		<tr>
+			<td>{{row[0]}}</td>
+			<td>{{row[1]}}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+	</table>
+	<br><br>
+	<form action="/home">
+    	<button type="submit" style = "" value="Home"> Home </button>
+	</form><br>
+</body>
+</html>
