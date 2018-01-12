@@ -1,0 +1,45 @@
+body {
+    background-color: #15a0B8;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 5px 5px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #98afc7;
+    color: black;
+    padding: 5px 5px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+h1 {
+    font-family: "Verdana";
+    font-size: 20px;
+}
+
+p {
+	font-family: "Verdana";
+	font-size: 15px;
+}
+
+legend {
+    font-family: "Verdana";
+    font-size: 15px;
+}
+
+fieldset {
+    background-color: #9Fc6cc;
+}
